@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+  user-select: none;
+  margin: 0;
+  padding: 0;
+}
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 1.28rem;
+  background: #fff;
+  white-space: nowrap;
+  box-shadow: 0 0.04rem 0.08rem 0 rgba(0, 0, 0, 0.08);
+}
+.header-logo-box {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: 0 0.32rem;
+  height: 100%;
+  line-height: 1.28rem;
+}
+.header-logo-box .header-logo {
+  width: 0.72rem;
+  height: 0.72rem;
+}
+.header-logo-box .header-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.16rem;
+  font-size: 0.3rem;
+  height: 100%;
+  justify-content: center;
+}
+.header-logo-box .header-text .text-title {
+  margin: 0;
+  height: 0.36rem;
+  line-height: 0.36rem;
+  font-size: 0.28rem;
+  font-weight: 500;
+  color: #333;
+}
+.header-logo-box .header-text .text-subtitle {
+  margin: 0;
+  height: 0.32rem;
+  font-size: 0.24rem;
+  color: #999;
+  line-height: 0.32rem;
+}
+.header-btn {
+  padding: 0;
+  margin-right: 0.32rem;
+  width: 1.52rem;
+  height: 0.56rem;
+  line-height: 0.56rem;
+  font-size: 0.24rem;
+  white-space: nowrap;
+  vertical-align: middle;
+  text-align: center;
+  color: #ffff;
+  border-radius: 20rem;
+  background-color: #ff2442;
+  cursor: pointer;
+  user-select: none;
+}
+.banner-wrapper {
+  position: relative;
+  margin-bottom: 0.2rem;
+  width: 100%;
+}
+.banner-video {
+  position: relative;
+  width: 100%;
+  height: 4.2rem;
+}
+.banner-video .video-mainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+.banner-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4.2rem;
+  background: url(https://picasso-static.xiaohongshu.com/fe-platform/24ab2e64bdbb79f1fee32dbe5bd35a17f3a53d9d.png) center center / cover;
+  z-index: 10;
+}
+.banner-cover .iconfont {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 1.12rem;
+  height: 1.12rem;
+  font-size: 1.12rem;
+  color: #515151;
+  opacity: 0.8;
+  z-index: 10;
+}
+.section-title {
+  margin: 0 0.3rem 0.3rem;
+  padding-top: 0.3rem;
+  font-size: 0.3rem;
+  line-height: 0.34rem;
+  font-weight: 500;
+  color: #333;
+}
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0.1rem;
+}
+.card-list .card-item {
+  flex: 1;
+  margin-bottom: 0.2rem;
+}
+.card-list .card-item .card-bg {
+  width: 3.6rem;
+  height: 4.8rem;
+  background-color: #f5f5f5;
+  border-radius: 0.08rem 0.08rem 0 0;
+  overflow: hidden;
+  background: url(https://sns-webpic.xhscdn.com/385a9a4f-0340-9a90-69d7-4971d3c58ca3?imageView2/1/w/360/h/480/format/jpg) center center / 100%;
+}
+.card-list .card-item .card-info {
+  padding: 0.2rem 0.24rem 0.24rem;
+}
+.card-list .card-item .info-txt {
+  font-weight: 600;
+  font-size: 0.28rem;
+  line-height: 0.44rem;
+  color: #333;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+}
+.card-list .card-item .info-author {
+  display: flex;
+  align-items: center;
+  margin-top: 0.16rem;
+  color: inherit;
+  text-decoration: none;
+  color: rgba(51, 51, 51, 0.8);
+}
+.card-list .card-item .author-img {
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+}
+.card-list .card-item .author-id {
+  margin-left: 0.12rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 0.32rem;
+  font-size: 0.24rem;
+}
+.card-list .card-item:nth-child(2n) {
+  margin-left: 0.1rem;
+}
+.bottom-btn {
+  position: fixed;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+  bottom: 1.36rem;
+  width: 3.26rem;
+  height: 0.8rem;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  background-image: url("https://picasso-static.xiaohongshu.com/fe-platform/c27981fef99ca1ef72ed57e04093a6aecdb354b4.png");
+  background-size: 100% 100%;
+  box-shadow: 0 0.04rem 0.16rem 0 rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}

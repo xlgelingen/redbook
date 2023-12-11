@@ -1,0 +1,212 @@
+@divide: 7.5;
+@pswWidth: 375;
+@ppr: @divide/@pswWidth * 1rem;
+
+* {
+    box-sizing: border-box;
+    user-select: none;
+    margin: 0;
+    padding: 0;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 1.28rem;
+    background: #fff;
+    white-space: nowrap;
+    box-shadow: 0 .04rem .08rem 0 rgba(0, 0, 0, .08);
+}
+
+.header-logo-box {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 0 .32rem;
+    height: 100%;
+    line-height: 1.28rem;
+
+    .header-logo {
+        width: .72rem;
+        height: .72rem;
+    }
+
+    .header-text {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0.16rem;
+        font-size: .3rem;
+        height: 100%;
+        justify-content: center;
+
+        .text-title {
+            margin: 0;
+            height: .36rem;
+            line-height: .36rem;
+            font-size: .28rem;
+            font-weight: 500;
+            color: #333;
+        }
+
+        .text-subtitle {
+            margin: 0;
+            height: .32rem;
+            font-size: .24rem;
+            color: #999;
+            line-height: .32rem;
+        }
+    }
+}
+
+.header-btn {
+    padding: 0;
+    margin-right: .32rem;
+    width: 1.52rem;
+    height: .56rem;
+    line-height: .56rem;
+    font-size: .24rem;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-align: center;
+    color: #ffff;
+    border-radius: 20rem;
+    background-color: #ff2442;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+.banner-wrapper {
+    position: relative;
+    margin-bottom: .2rem;
+    width: 100%;
+}
+
+.banner-video {
+    position: relative;
+    width: 100%;
+    height: 210*(@ppr);
+
+    .video-mainer {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: contain;
+    }
+}
+
+.banner-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 210*(@ppr);
+    background: url(https://picasso-static.xiaohongshu.com/fe-platform/24ab2e64bdbb79f1fee32dbe5bd35a17f3a53d9d.png) center center / cover;
+    z-index: 10;
+
+    .iconfont {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        width: 1.12rem;
+        height: 1.12rem;
+        font-size: 56*(@ppr);
+        color: #515151;
+        opacity: 0.8;
+        z-index: 10;
+    }
+}
+
+.section-title {
+    margin: 0 .3rem .3rem;
+    padding-top: .3rem;
+    font-size: .3rem;
+    line-height: .34rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 .1rem;
+
+    .card-item {
+        flex: 1;
+        margin-bottom: .2rem;
+
+        .card-bg {
+            width: 180*(@ppr);
+            height: 240*(@ppr);
+            background-color: #f5f5f5;
+            border-radius: 0.08rem 0.08rem 0 0;
+            overflow: hidden;
+            background: url(https://sns-webpic.xhscdn.com/385a9a4f-0340-9a90-69d7-4971d3c58ca3?imageView2/1/w/360/h/480/format/jpg) center center / 100%;
+        }
+
+        .card-info {
+            padding: .2rem .24rem .24rem;
+        }
+
+        .info-txt {
+            font-weight: 600;
+            font-size: .28rem;
+            line-height: .44rem;
+            color: #333;
+            word-break: break-all;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            -webkit-line-clamp: 2;
+        }
+
+        .info-author {
+            display: flex;
+            align-items: center;
+            margin-top: .16rem;
+            color: inherit;
+            text-decoration: none;
+            color: rgba(51, 51, 51, .8);
+        }
+
+        .author-img {
+            width: 20*(@ppr);
+            height: 20*(@ppr);
+            border-radius: 50%;
+        }
+
+        .author-id {
+            margin-left: .12rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            line-height: .32rem;
+            font-size: .24rem;
+        }
+    }
+
+    .card-item:nth-child(2n) {
+        margin-left: .1rem;
+    }
+}
+
+.bottom-btn {
+    position: fixed;
+    left: 50%;
+    transform: translate3d(-50%, 0, 0);
+    bottom: 1.36rem;
+    width: 3.26rem;
+    height: .8rem;
+    border-radius: .4rem;
+    overflow: hidden;
+    background-image: url("https://picasso-static.xiaohongshu.com/fe-platform/c27981fef99ca1ef72ed57e04093a6aecdb354b4.png");
+    background-size: 100% 100%;
+    box-shadow: 0 .04rem .16rem 0 rgba(0, 0, 0, .2);
+    z-index: 1000;
+}
